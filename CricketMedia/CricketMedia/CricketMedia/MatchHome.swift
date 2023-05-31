@@ -56,7 +56,8 @@ extension MatchHome: UITableViewDelegate, UITableViewDataSource {
             cell2.playername.text = playerName
             cell2.backgroundColor = .orange
             cell2.playername.font = .systemFont(ofSize: 18)
-            cell2.captainOrWk.font = .boldSystemFont(ofSize: 25)
+            cell2.captainOrWk.font = .boldSystemFont(ofSize: 24)
+            //Git check
 
             if let isCaptain = playersName[keys[indexPath.row]]?.iscaptain, let isKeeper = playersName[keys[indexPath.row]]?.iskeeper, isCaptain && isKeeper  {
                 cell2.captainOrWk.text = "C/WK"
